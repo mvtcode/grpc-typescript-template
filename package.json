@@ -1,0 +1,40 @@
+{
+  "name": "grpc-template",
+  "version": "1.0.0",
+  "description": "grpc project template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "npm run dist/index.js",
+    "test": "exit 0",
+    "lint": "eslint src/**/*.ts",
+    "lint-fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [],
+  "author": "tanmv",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.7",
+    "dotenv": "^16.0.1",
+    "grpc": "^1.24.11",
+    "mongoose": "^6.4.4",
+    "uuidv4": "^6.2.13",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "pre-commit": [
+    "lint-fix",
+    "test"
+  ]
+}
