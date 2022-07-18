@@ -6,4 +6,4 @@ Feature:
 
 - Validate data
 - Throw error
-- Log with winston
+- Logger with winston
